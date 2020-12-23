@@ -15,9 +15,7 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     switch (ul_reason_for_call)
     {
     case DLL_PROCESS_ATTACH:
-		//Create unique instance of Dll/Exe path data
-		C_DllPathData::createInstance((HINSTANCE)hModule);
-
+		
 		break;
     case DLL_THREAD_ATTACH:
     case DLL_THREAD_DETACH:
